@@ -42,7 +42,7 @@ public class calculator {
 		do
 		{
 			
-			 System.out.println("Calculator Options : ");
+			 System.out.println("============ Calculator ============");
 			 System.out.println("1. Addition \n");
 			 System.out.println("2. Subtraction \n");
 			 System.out.println("3. Multiplication \n");
@@ -50,6 +50,7 @@ public class calculator {
 			 System.out.println("5. Power \n");
 			 System.out.println("6. Square Root \n")
 			 System.out.println("7. Quit \n");
+			 System.out.println("====================================");
 			 System.out.println("Enter your choice : ");
 			 ch = sc.nextInt();
 				    
