@@ -49,7 +49,8 @@ public class calculator {
 			 System.out.println("4. Division \n");
 			 System.out.println("5. Power \n");
 			 System.out.println("6. Square Root \n")
-			 System.out.println("7. Quit \n");
+			 System.out.println("7. Modulus Operation \n")
+			 System.out.println("8. Quit \n");
 			 System.out.println("====================================");
 			 System.out.println("Enter your choice : ");
 			 ch = sc.nextInt();
@@ -99,15 +100,23 @@ public class calculator {
 			case 6:
 					System.out.println("Square Root is : " +squareRoot());
 					break;
-				    		
+					
 			case 7:
+					System.out.println("Enter two numbers : ");
+					num1 = sc.nextDouble();
+				    num2 = sc.nextDouble();
+				    res = num1 % num2;
+				    System.out.println(num1 + " % " + num2 + " = " + res);
+				    break;
+				    		
+			case 8:
 				    break;
 
 			default:
 				    System.out.println("Invalid choice!!");
 				    break;
 			}
-		}while(ch != 7);
+		}while(ch != 8);
 			    
 		sc.close();
 	}
